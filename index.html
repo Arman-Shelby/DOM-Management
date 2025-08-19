@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of Dom</title>
+    <link rel="stylesheet" href="styles/pstyles.css">
+    <style>
+        h1{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <header>This Is My Header And No Banner</header>
+
+    <main>
+        <h1>Welcome to My Dom</h1>
+        <ul>
+            <li>Shafayeter</li>
+            <li>Bonobas</li>
+            <li>jalaliSet</li>
+            <li>Dom de re baba</li>
+        </ul>
+
+        <section>
+            <div class="border-2 border red"></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <h1>This is to check the dom</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptate optio commodi voluptatibus explicabo nobis illum quaerat cupiditate labore consequuntur?</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ea?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam modi blanditiis placeat libero.</p>
+        </section>
+
+    </main>
+    <script>
+        // console.log("Welcome to the DOM Management Project");
+        // console.log("This is a simple HTML document with a header, main content, and a list."); 
+        // console.log("Welcome to my first javascript documented website");
+
+        // console.log("Document object Model");
+
+        const student = {
+            name: "John Doe",
+            id: 121,
+            study: function(subject){
+                console.log('Studying subject: ', subject);
+            }
+        };
+
+        document.getElementsByTagName
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection);
+
+        // for(const li of liCollection){
+        //     console.lg(li);
+        // }
+        
+
+          for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
+        //all h1 tags 
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const heading of allHeadings){
+            console.log(heading.innerText);
+        }
+
+        const allParagraph = document.getElementsByTagName('p');
+        for(const paragraph of allParagraph){
+            console.log(paragraph.innerText);
+        }
+
+    </script>
+    <script src="js/hello.js"></script>
+</body>
+</html>
