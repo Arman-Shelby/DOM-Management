@@ -12,14 +12,20 @@
         #food-title{
             color: green;
         }
+        .food .foreign{
+            font-weight: 900;
+            
+        }
     </style>
 </head>
 <body>
     <header>This Is My Header And No Banner</header>
 
     <main>
-       <section>
+       <section id="old-dhaka" class="songs">
          <h1>Welcome to My Dom</h1>
+         <p>Lorem ipsum, dolo <span>Oli Goli</span> sit amet consectetur <span>ksgfsndklf</span> adipisicing elit. Velit, nam.</p>
+         <h1> haaaaabi <span>some text</span> jaaaaabi</h1>
         <ul>
             <li>Shafayeter</li>
             <li class="foreign">Bonobas</li>
@@ -43,7 +49,7 @@
        
        </section>
 
-       <section>
+       <section class="food">
         <h1 id="food-title">Foods I love</h1>
         <li>Rice</li>
         <li>Potata</li>
@@ -114,6 +120,13 @@
 
         for (const element of foreignElements){
             console.log(element.innerText);
+        }
+
+        //querry selector all
+
+        const spanElements = document.querySelectorAll('#old-dhaka p span');
+        for(const span of spanElements){
+            console.log(span.innerText);
         }
 
     </script>
