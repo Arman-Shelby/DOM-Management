@@ -10,7 +10,7 @@ for (section of sections){
     section.style.margin = '10px';
     section.style.borderRadius = '20px';
     section.style.padding = '20px';
-    console.log(section);
+    // console.log(section);
 
 }
 
