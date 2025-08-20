@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour Of Dom</title>
-    <link rel="stylesheet" href="sytles/pstyeles.css">
+    <link rel="stylesheet" href="sytles/pstyeles.css" />
     <style>
-        h1{
-            color: gold;
-        }
-        #food-title{
-            color: green;
-        }
-        .food .foreign{
-            font-weight: 900;
-            
-        }
+      h1 {
+        color: gold;
+      }
+
+      #food-title {
+        color: green;
+        /* background-color: lightgreen; */
+        /* margin-left: 20px; */
+      }
+      .bg-red{
+        background-color: red;
+      }
+      .bold{
+        font-weight: 100 ;
+      }
+      .big{
+        font-size: 5em;
+      }
+      .food .foreign {
+        font-weight: 900;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>This Is My Header And No Banner</header>
 
     <main>
-       <section id="old-dhaka" class="songs">
-         <h1>Welcome to My Dom</h1>
-         <p>Lorem ipsum, dolo <span>Oli Goli</span> sit amet consectetur <span>ksgfsndklf</span> adipisicing elit. Velit, nam.</p>
-         <h1> haaaaabi <span>some text</span> jaaaaabi</h1>
+      <section id="old-dhaka" class="songs">
+        <h1>Welcome to My Dom</h1>
+        <p>
+          Lorem ipsum, dolo <span>Oli Goli</span> sit amet consectetur
+          <span>ksgfsndklf</span> adipisicing elit. Velit, nam.
+        </p>
+        <h1>haaaaabi <span>some text</span> jaaaaabi</h1>
         <ul>
-            <li>Shafayeter</li>
-            <li class="foreign">Bonobas</li>
-            <li id="band">jalaliSet</li>
-            <li class="International">Dubai</li>
-            <li>Dom de re baba</li>
+          <li>Shafayeter</li>
+          <li class="foreign">Bonobas</li>
+          <li id="band">jalaliSet</li>
+          <li class="International">Dubai</li>
+          <li>Dom de re baba</li>
         </ul>
 
         <section>
-            <div class="border-2 border red"></div>
-            <div></div>
-            <div></div>
+          <div class="border-2 border red"></div>
+          <div></div>
+          <div></div>
         </section>
 
-            <h1>This is to check the dom</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptate optio commodi voluptatibus explicabo nobis illum quaerat cupiditate labore consequuntur?</p>
+        <h1>This is to check the dom</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+          voluptate optio commodi voluptatibus explicabo nobis illum quaerat
+          cupiditate labore consequuntur?
+        </p>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ea?</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ea?
+        </p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam modi blanditiis placeat libero.</p>
-       
-       </section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          quisquam modi blanditiis placeat libero.
+        </p>
+      </section>
+      <section id="players-container">
+        <h1>Players</h1>
+        <ul>
+            <li>Messi</li>
+            <li>pele</li>
+            <li>Mbappse</li>
+            <!-- <li>chele</li> -->
+            <li>Ronaldo</li>
+        </ul>
+      </section>
 
-       <section class="food">
+      <section class="food">
         <h1 id="food-title">Foods I love</h1>
         <li>Rice</li>
         <li>Potata</li>
@@ -58,78 +90,87 @@
         <li class="foreign">Pizza</li>
         <li class="foreign">Pasta</li>
         <li class="foreign">Corn</li>
-       </section>
-
+      </section>
     </main>
     <script>
-        // console.log("Welcome to the DOM Management Project");
-        // console.log("This is a simple HTML document with a header, main content, and a list."); 
-        // console.log("Welcome to my first javascript documented website");
+      // console.log("Welcome to the DOM Management Project");
+      // console.log("This is a simple HTML document with a header, main content, and a list.");
+      // console.log("Welcome to my first javascript documented website");
 
-        // console.log("Document object Model");
+      // console.log("Document object Model");
 
-        const student = {
-            name: "John Doe",
-            id: 121,
-            study: function(subject){
-                console.log('Studying subject: ', subject);
-            }
-        };
+      const student = {
+        name: "John Doe",
+        id: 121,
+        study: function (subject) {
+        //   console.log("Studying subject: ", subject);
+        },
+      };
 
-        document.getElementsByTagName
-        const liCollection = document.getElementsByTagName('li');
-        console.log(liCollection);
+      document.getElementsByTagName;
+      const liCollection = document.getElementsByTagName("li");
+    //   console.log(liCollection);
 
-        // for(const li of liCollection){
-        //     console.lg(li);
-        // }
-        
+      // for(const li of liCollection){
+      //     console.lg(li);
+      // }
 
-          for(const li of liCollection){
+      for (const li of liCollection) {
         //     console.log(li.innerText);
-        // 
-        }
+        //
+      }
 
-        //all h1 tags 
+      //all h1 tags
 
-        const allHeadings = document.getElementsByTagName('h1');
-        for (const heading of allHeadings){
-            // console.log(heading.innerText);
-        }
+      const allHeadings = document.getElementsByTagName("h1");
+      for (const heading of allHeadings) {
+        // console.log(heading.innerText);
+      }
 
-        const allParagraph = document.getElementsByTagName('p');
-        for(const paragraph of allParagraph){
-            // console.log(paragraph.innerText);
-        }
+      const allParagraph = document.getElementsByTagName("p");
+      for (const paragraph of allParagraph) {
+        // console.log(paragraph.innerText);
+      }
 
-        //Get by ID
-        
-        const foodTitleH1 = document.getElementById('food-title');
+      //Get by ID
 
-        console.log(foodTitleH1.innerText);
+      const foodTitleH1 = document.getElementById("food-title");
 
-        foodTitleH1.innerText = 'Foods i love to eat.'
+    //   console.log(foodTitleH1.innerText);
 
-        const bandElement = document.getElementById('band');
-        bandElement.innerText = 'Jalali sleeping band.'
+      foodTitleH1.innerText = "Foods i love to eat.";
 
-        //get elements by class name
+      const bandElement = document.getElementById("band");
+      bandElement.innerText = "Jalali sleeping band.";
 
-        const foreignElements = document.getElementsByClassName('foreign');
-        console.log(foreignElements);
+      //get elements by class name
 
-        for (const element of foreignElements){
-            console.log(element.innerText);
-        }
+      const foreignElements = document.getElementsByClassName("foreign");
+    //   console.log(foreignElements);
 
-        //querry selector all
+      for (const element of foreignElements) {
+        // console.log(element.innerText);
+      }
 
-        const spanElements = document.querySelectorAll('#old-dhaka p span');
-        for(const span of spanElements){
-            console.log(span.innerText);
-        }
+      //querry selector all
 
+      const spanElements = document.querySelectorAll("#old-dhaka p span");
+      for (const span of spanElements) {
+        // console.log(span.innerText);
+      }
+
+      const foodElement = document.getElementById("food-title");
+      // undefined
+      // foodElement.sty
+      // undefined
+      // foodElement.style.backgroundColor = 'lightgreen'
+      // 'lightgreen'
+      // foodElement.style.borderRadius = '15px';
+      // '15px'
+      // foodElement.style.padding = '15px';
+      // '15px
     </script>
     <script src="js/hello.js"></script>
-</body>
+    <script src="js/cssinJs.js"></script>
+  </body>
 </html>
